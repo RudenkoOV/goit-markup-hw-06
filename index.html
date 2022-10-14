@@ -291,9 +291,14 @@
                     <p class="soc-text">Підпишіться на розсилку</p>
                     <form class="form-footer" autocomplete="off">
                         <label class="label-footer">
-                        <input class="footer-input" type="text" name="mail" placeholder=" ">
+                        <input class="footer-input" type="text" name="mail" placeholder="E-mail">
                         </label>
-                        <button type="button"></button>
+                        <button class="footer-btn" type="submit">
+                            <p>Підписатися</p>
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -309,34 +314,41 @@
                 <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
                 <label class="label">
                     <span class="label-text">Ім'я</span>
-                    <svg class="label-svg" width="12" height="12">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    <svg class="label-svg" width="18" height="18">
+                        <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                     <input class="text-input" type="text" name="name" placeholder=" ">
                 </label>
                 <label class="label">
                     <span class="label-text">Телефон</span>
-                    <svg class="label-svg" width="12" height="12">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    <svg class="label-svg" width="18" height="18">
+                        <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                     <input class="text-input" type="text" name="phone" placeholder=" ">
                 </label>
                 <label class="label">
                     <span class="label-text">Пошта</span>
-                    <svg class="label-svg" width="12" height="12">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    <svg class="label-svg" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                     <input class="text-input" type="text" name="mail" placeholder=" ">
                 </label>
                 <label class="label">
                     <span class="label-text">Коментар</span>
-                    <textarea class="text-area" rows="10" width="448" min-height="120">Введіть текст</textarea>
+                    <textarea class="text-area" rows="10" width="448" min-height="120" placeholder="Введіть текст"></textarea>
                 </label>
                 <label class="checkbox">
-                    <input class="checkbox" type="checkbox">
-                    Погоджуюся з розсилкою та приймаю 
+                    <input class="agreement" type="checkbox">
+                    <svg class="agreement-disable" width="16" height="15">
+                        <use href="./images/icons.svg#icon-nocheck"></use>
+                    </svg>
+                    <span class="agreement-enable"></span>
+                    <p>Погоджуюся з розсилкою та приймаю</p> 
                     <a href="">Умови договору</a>
                 </label>
+                <button class="footer-btn backdrop-btn" type="submit">
+                    <p>Відправити</p>
+                </button>
             </form>
           </div>
               </div>
