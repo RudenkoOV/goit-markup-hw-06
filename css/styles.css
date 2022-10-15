@@ -659,7 +659,7 @@ h1, h2, h3, h4, p, ul {
     clip-path: inset(50%);
     margin: -1px;
 }
-.agreement:checked ~ .agreement-disable {
+.agreement:not(:checked) ~ .agreement-disable {
     appearance: auto;
     position: static;
     white-space: normal;
@@ -671,7 +671,7 @@ h1, h2, h3, h4, p, ul {
     margin: 0;
 }
 
-.agreement:checked ~ .agreement-enable {
+.agreement:not(:checked) ~ .agreement-enable {
     appearance: none;
     position: absolute;
     white-space: nowrap;
